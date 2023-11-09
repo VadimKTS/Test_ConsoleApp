@@ -1053,6 +1053,16 @@
             "rid": "win"
           }
         }
+      },
+      "Test_StreamReader/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Test_StreamReader.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Test_StreamReader.dll": {}
+        }
       }
     }
   },
@@ -2875,13 +2885,19 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Test_StreamReader/1.0.0": {
+      "type": "project",
+      "path": "../Test_StreamReader/Test_StreamReader.csproj",
+      "msbuildProject": "../Test_StreamReader/Test_StreamReader.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.EntityFrameworkCore >= 7.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.13",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.13"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.13",
+      "Test_StreamReader >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2916,7 +2932,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Git repositories\\Test_ConsoleApp\\Test_ConsoleApp\\Test_StreamReader\\Test_StreamReader.csproj": {
+              "projectPath": "D:\\Git repositories\\Test_ConsoleApp\\Test_ConsoleApp\\Test_StreamReader\\Test_StreamReader.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
