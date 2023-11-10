@@ -3,13 +3,13 @@ using Test_ConsoleApp.DataAccess.Entity;
 
 namespace Test_ConsoleApp.DataAccess
 {
-    internal class AppContext : DbContext
+    public class ApplicationContext : DbContext
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<TagToUser> TagsToUser { get; set; }
 
-        public AppContext()
+        public ApplicationContext()
         {
             Database.EnsureCreated();
         }

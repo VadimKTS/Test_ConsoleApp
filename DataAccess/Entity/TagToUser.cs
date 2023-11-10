@@ -4,7 +4,7 @@ namespace Test_ConsoleApp.DataAccess.Entity
 {
     public class TagToUser
     {
-        public Guid EntityId { get; set; }
+        public Guid TagToUserId { get; set; }
         public Guid UserId { get; set; }
         public Guid TagId { get; set; }
 

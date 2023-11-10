@@ -13,6 +13,6 @@ namespace Test_ConsoleApp.DataAccess.Entity
         public string Domain { get; set; } = default!;
 
 
-        public List<User>? Users { get; set; }
+        public List<TagToUser>? Users { get; set; }
     }
 }
